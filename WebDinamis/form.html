@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Form Berbasis Input, Proses dan Output</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+	<style type="text/css">
+		html {
+			margin: 0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.align-right {
+			text-align: right;
+		}
+	</style>
+
+	<table style="width: 100%;text-align: center">
+		<tr style="height: 7rem;background-color: rgb(50,50,190);">
+			<td style="font-size: 50px;font-weight: 800;color: white;">
+				Form Input Data
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+	<form method="post" action="database.php">
+		<table style="width: 50%;margin:auto;">
+		<tr>
+			<td class="align-right">
+				Nama
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="text" name="nama">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Tempat Lahir
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="text" name="tempat_lahir">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Tanggal Lahir
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="date" name="tanggal_lahir">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Jenis Kelamin
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="radio" name="gender" value="L">Pria
+				<input type="radio" name="gender" value="P">Wanita
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Alamat
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="text" name="alamat">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Agama
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<select name="agama">
+					<option selected="selected" value="">------Pilih------</option>
+					<option>Islam</option>	
+					<option>Kristen</option>	
+					<option>Katholik</option>	
+					<option>Hindu</option>	
+					<option>Buddha</option>	
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Asal Sekolah
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="text" name="asal_sekolah">
+			</td>
+		</tr>
+
+		<tr>
+			<td class="align-right">
+				Alamat Asal Sekolah
+			</td>
+			<td style="width: 10px">:</td>
+			<td>
+				<input type="text" name="alamat_asal_sekolah">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				
+			</td>
+			<td style="width: 10px"></td>
+			<td>
+				<input type="submit" name="kirim" value="KIRIM"> || 
+				<input type="reset" name="reset" value="CANCEL">
+			</td>
+		</tr>
+		
+	</table>
+	</form>
+	
+</body>
+</html>
